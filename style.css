@@ -1,0 +1,475 @@
+*{/* ÐžÐ‘ÐžÐ’Ð¯Ð—ÐšÐžÐ’Ðž ÐÐ ÐšÐžÐ–ÐÐžÐœÐ£ ÐŸÐ ÐžÐ•ÐšÐ¢Ð† */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: url(https://c4.wallpaperflare.com/wallpaper/538/10/446/ai-art-sports-car-sunset-mountains-road-hd-wallpaper-thumb.jpg);
+    background-size: cover;
+}
+/* HEADER */
+.header {
+    background:linear-gradient(to right top, #fa0cda,#1d0fe4,#9901ff);
+    width: 100%;
+    animation: header 2s linear;
+}
+@keyframes header{
+    0%{
+        transform: translatey(-500px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+.header-body{
+    display: flex;
+    align-items: center;
+}
+.logo {
+    animation: logo 1s linear alternate infinite;
+}
+@keyframes logo{
+    0%{
+        box-shadow:
+        -15px -15px 2px -5px rgba(122, 5, 255, 0.842),
+        -15px 15px 2px -5px rgb(245, 13, 110),
+        15px -15px 2px -5px rgba(72, 255, 0, 0.993),
+        15px 15px 2px -5px rgb(240, 1, 1);
+        transform: scale(1);
+    }
+    50%{
+        box-shadow:
+    -15px -15px 2px -5px rgba(255, 251, 1, 0.904),
+    -15px 15px 2px -5px rgba(3, 250, 250, 0.904),
+    15px -15px 2px -5px rgb(255, 145, 0),
+    15px 15px 2px -5px rgba(184, 4, 255, 0.829);
+    transform: scale(1.3);
+    }
+    100%{
+        box-shadow:
+        -15px -15px 2px -5px rgba(123,51,90,.5),
+        -15px 15px 2px -5px rgba(60,74,123,.5),
+        15px -15px 2px -5px rgba(255,0,0,.5),
+        15px 15px 2px -5px rgba(60,123,68,.5);
+    }
+}
+.menu-link {
+    display: flex;
+    margin: 0px 350px;
+}
+.link {
+    padding-left: 70px;
+    transition: 0.4s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    font-family: 'Rubik Wet Paint', cursive;
+    transition: 0.8s;
+}
+
+.link:hover:nth-child(1){
+    color: #eecc0e;
+    letter-spacing: 3px;
+}
+.link:hover:nth-child(1)::after{
+    position: absolute;
+    content: "";
+    width: 70%;
+    transition: 0.4s;
+    height: 110%;
+    bottom: 0;
+    z-index: -1;
+    right: -18px;
+    border-radius: 7px;
+    background-color: #f80707;
+    animation: link-1 1s linear;
+}
+
+@keyframes link-1{
+    0%{
+        height: 10%;
+        width: 70%;
+        background-color: rgb(253, 5, 5);
+    }
+    50%{
+        height: 50%;
+        width: 70%;
+        background-color: rgb(253, 5, 5);
+    }
+    100%{
+        
+        height: 110%;
+        width: 70%;
+        background-color: rgb(253, 5, 5);
+    }
+}
+.link:hover:nth-child(2){
+    color: #60ee0e;
+    letter-spacing: 3px;
+}
+.link:hover:nth-child(2)::after{
+    position: absolute;
+    content: "";
+    width: 70%;
+    transition: 0.4s;
+    height: 110%;
+    bottom: 0;
+    z-index: -1;
+    right: -10px;
+    border-radius: 7px;
+    background-color: #000000;
+    animation: link-2 1s linear;
+}
+
+@keyframes link-2{
+    0%{
+        height: 10%;
+        width: 70%;
+        background-color: rgb(14, 13, 13);
+    }
+    50%{
+        height: 50%;
+        width: 70%;
+        background-color: rgb(0, 0, 0);
+    }
+    100%{
+        
+        height: 110%;
+        width: 70%;
+        background-color: rgb(5, 5, 5);
+    }
+}
+.link:hover:nth-child(3){
+    color: #0eeec9;
+    letter-spacing: 3px;
+}
+.link:hover:nth-child(3)::after{
+    position: absolute;
+    content: "";
+    width: 70%;
+    transition: 0.4s;
+    height: 110%;
+    bottom: 0;
+    z-index: -1;
+    right: -13px;
+    border-radius: 7px;
+    background-color: #f88807;
+    animation: link-3 1s linear;
+}
+
+@keyframes link-3{
+    0%{
+        height: 10%;
+        width: 70%;
+        background-color: #f88807;
+    }
+    50%{
+        height: 50%;
+        width: 70%;
+        background-color: #f88807;
+    }
+    100%{
+        
+        height: 110%;
+        width: 70%;
+        background-color: #f88807;
+    }
+}
+.knop{
+    width: 220px;
+    height: 40px;
+    background-color: #21ee0e;
+    border-radius: 10px;
+    margin-right: 70px;
+    text-align: center;
+    padding-top: 9px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bold;
+    animation: knop 4s linear alternate infinite;
+}
+@keyframes knop{
+    0%{
+        
+        background-color: #21ee0e;
+    }
+    15%{
+        background-color: #eecc0e;
+    }
+    25%{
+        background-color: #bf17c5;
+    }
+    35%{
+        background-color: #ecb562;
+    }
+    50%{
+        background-color: rgb(245, 14, 45);
+    }
+    75%{
+        background-color: rgb(255, 111, 9);
+    }
+    100%{
+        background-color: #0e77ee;
+    }
+}
+.logo{
+    margin: 20px;
+    border-radius: 50%;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.musik_1 {
+    width: 450px;
+    height: 510px;
+    background:linear-gradient(to right top, #fff,#69f70b,#0a1af3);
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.4s;
+    animation: musik-1 2s linear;
+    position: relative;
+    cursor: pointer;
+}
+@keyframes musik-1{
+    0%{
+        transform: translatex(-500px);
+    }
+    100%{
+        transform: translatex(10px);
+    }
+}
+.musik_1:hover{
+    transform: scale(0.96);
+}
+.mus-img {
+    width: 250px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 20px;
+    animation: img-m 2s linear alternate infinite;
+}
+@keyframes img-m{
+    0%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(5deg);
+    }
+}
+.mus-text {
+    font-family: 'Courgette', cursive;
+    margin: 30px auto;
+    font-size: 20px;
+    
+}
+
+.mus-button {
+    margin: 40px auto;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(221, 140, 41);
+    position: relative;
+    border-radius: 10px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.mus-button:hover{
+    transform: scale(1.1);
+    animation: but 5s linear alternate infinite;
+
+}
+@keyframes but{
+    0%{
+        background:linear-gradient(to right top, #fff,#f7890b,#0a1af3);
+    }
+    50%{
+        background:linear-gradient(to right top, #4898bd,#dff70b,#9e0af3);
+    }
+    100%{
+        background:linear-gradient(to right top, #fff,#c00bf7,#f3bd0a);
+    }
+}
+.mus-button::before{
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 10px;
+    right: 20px;
+    top: 2px;
+    background-color: rgb(19, 19, 236);
+    transition: 0.5s;
+    animation: button 2s linear alternate infinite;
+}
+@keyframes button{
+    0%{
+
+    }
+    50%{
+        
+    }
+    100%{
+        height: 90%;
+        width: 10px;
+        background-color: rgb(19, 19, 236);
+    }
+}
+.mus-button::after{
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 10px;
+    left: 20px;
+    bottom: 2px;
+    background-color: rgba(19, 19, 236, 0);
+    transition: 0.5s;
+    animation: buton 2s linear alternate infinite;
+}
+@keyframes buton{
+    0%{
+
+    }
+    50%{
+        
+    }
+    100%{
+        height: 90%;
+        width: 10px;
+        background-color: rgb(236, 26, 19);
+    }
+}
+
+
+
+
+.musik_2 {
+    width: 450px;
+    height: 510px;
+    background:linear-gradient(to right top, #bf17c5,#eecc0e,#111010);
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.4s;
+    animation: musik-2 2s linear;
+    cursor: pointer;
+}
+@keyframes musik-2{
+    0%{
+        transform: translatex(500px);
+    }
+    100%{
+        transform: translatex(-10px);
+    }
+}
+.musik_2:hover{
+    transform: scale(0.96);
+}
+.musi-img {
+    width: 250px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 20px;
+    animation: img 2s linear alternate infinite;
+}
+@keyframes img{
+    0%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(5deg);
+    }
+}
+.musi-text {
+    font-family: 'Courgette', cursive;
+    margin: 30px auto;
+    font-size: 20px;
+}
+.musi-button {
+    margin: 40px auto;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(221, 140, 41);
+    position: relative;
+    border-radius: 10px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.musi-button:hover{
+    transform: scale(1.1);
+    animation: bu 5s linear alternate infinite;
+    }
+@keyframes bu{
+0%{
+    background:linear-gradient(to right top, #fff,#f7890b,#0a1af3);
+}
+50%{
+    background:linear-gradient(to right top, #4898bd,#dff70b,#9e0af3);
+}
+100%{
+    background:linear-gradient(to right top, #fff,#c00bf7,#f3bd0a);
+}
+}
+.musi-button::before{
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 10px;
+    right: 20px;
+    top: 2px;
+    background-color: rgb(19, 19, 236);
+    transition: 0.5s;
+    animation: button-1 2s linear alternate infinite;
+    cursor: pointer;
+}
+@keyframes button-1{
+    0%{
+
+    }
+    50%{
+        
+    }
+    100%{
+        height: 90%;
+        width: 10px;
+        background-color: rgb(19, 19, 236);
+    }
+}
+.musi-button::after{
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 10px;
+    left: 20px;
+    bottom: 2px;
+    background-color: rgba(19, 19, 236, 0);
+    transition: 0.5s;
+    animation: buton-1 2s linear alternate infinite;
+}
+@keyframes buton-1{
+    0%{
+
+    }
+    50%{
+        
+    }
+    100%{
+        height: 90%;
+        width: 10px;
+        background-color: rgb(236, 26, 19);
+    }
+}
